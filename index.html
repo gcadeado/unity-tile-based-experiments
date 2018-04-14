@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us" style="height: 100%; width: 100%;">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | Tile-based Experiments</title>
+  </head>
+  <body
+    style="
+      text-align: center;
+      background-color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    "
+  >
+    <canvas
+      id="unity-canvas"
+      style="width: 1280px; height: 720px; background: #231f20;"
+    ></canvas>
+    <script src="Build/game_webgl.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/game_webgl.data",
+        frameworkUrl: "Build/game_webgl.framework.js",
+        codeUrl: "Build/game_webgl.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Cencic",
+        productName: "Tile-based Experiments",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
