@@ -34,5 +34,5 @@ sysinfo.txt
 Assets/unity-build-master/
 
 # Local files that cannot be commited :)
-/Assets/Sprites/RoguePlayer_48x48.png
-/Assets/Sprites/Tilesets/RogueEnvironment16x16.png
+/Assets/Sprites/RoguePlayer_48x48.png*
+/Assets/Sprites/Tilesets/RogueEnvironment16x16.png*
