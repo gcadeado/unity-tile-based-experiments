@@ -12,7 +12,7 @@ public class CopyTilemap : MonoBehaviour
 {
 
     [SerializeField]
-    private List<TilemapPair> tilemapsToCopy;
+    private List<TilemapPair> tilemapsToCopy = null;
 
     [System.Serializable]
     public struct TilemapPair

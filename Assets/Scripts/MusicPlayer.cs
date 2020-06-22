@@ -11,10 +11,10 @@ public class MusicPlayer : Singleton<MusicPlayer>
     protected AudioManager audioManager;
 
     [SerializeField]
-    private Sound mainMusic;
+    private Sound mainMusic = null;
 
     [SerializeField]
-    private Sound ambientMusic;
+    private Sound ambientMusic = null;
 
     private AudioSourcePlayer audioPlayer;
 
@@ -25,8 +25,14 @@ public class MusicPlayer : Singleton<MusicPlayer>
 
     void Start()
     {
-        audioPlayer.PlaySound(mainMusic);
-        audioPlayer.PlaySound(ambientMusic);
+        if (mainMusic)
+        {
+            audioPlayer.PlaySound(mainMusic);
+        }
+        if (ambientMusic)
+        {
+            audioPlayer.PlaySound(ambientMusic);
+        }
     }
 
 }

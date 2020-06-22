@@ -1,8 +1,8 @@
 ﻿namespace Cawotte.Toolbox.Audio
 {
-    
+
     using UnityEngine;
-    
+
     /*
      * Class used to define a sound, any playable sound clips.
      * The audio manager contains an Array of 'Sound' which will all contain a sound.
@@ -13,14 +13,14 @@
     /// that must be registered in the AudioManager or a SoundList from the AudioManager.
     /// </summary>
     [System.Serializable]
-    [CreateAssetMenu(fileName ="New Sound", menuName = "Audio/Sound")]
+    [CreateAssetMenu(fileName = "New Sound", menuName = "Audio/Sound")]
     public class Sound : ScriptableObject
     {
 
         [Header("Sound Info")]
 
-        public string name; //sound name
-        
+        public string soundName; //sound name
+
         public AudioClip clip; //sound asset
 
         public bool isMusic = false;
@@ -43,10 +43,10 @@
 
         //component which will play the sound
         [HideInInspector] public AudioSource source;
-        
+
         public float Volume { get => volume; }
         public float Pitch { get => pitch; }
-        public float MinDistance { get => minDistance;  }
+        public float MinDistance { get => minDistance; }
         public float MaxDistance { get => maxDistance; }
 
         public bool Loop { get => loop; set => loop = value; }

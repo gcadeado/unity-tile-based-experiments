@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Menu : MonoBehaviour {
+public class Menu : MonoBehaviour
+{
 
     [SerializeField]
-    private GameObject quitPanel;
+    private GameObject quitPanel = null;
 
 #if UNITY_WEBGL
     private void Start()
@@ -18,7 +19,7 @@ public class Menu : MonoBehaviour {
 
     public void PlayGame()
     {
-		SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level1");
     }
 
     public void QuitGame()

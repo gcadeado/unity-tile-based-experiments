@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class Map : MonoBehaviour
 {
     [SerializeField]
-    private MapGlobalReference globalReference;
+    private MapGlobalReference globalReference = null;
 
 
     [Header("Tilemaps")]
