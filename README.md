@@ -30,4 +30,6 @@ Turns out you can avoid most of this hassle by using ScriptableObjects for "glob
  - __**space_puzzle**__, music by Leon Menezes for the main song.
  - **[Rogue Dungeon Tileset 16x16](https://secrethideout.itch.io/rogue-dungeon-tileset-16x16)** by [Secret Hideout](https://secrethideout.itch.io/) for this awesome tileset
  - **[SmallWorld_WeeklyJam40](https://github.com/Cawotte/SmallWorld_WeeklyJam40)** by [Cawotte](https://github.com/Cawotte) for some core mechanics used in this game.
+ - Some sprites from Gardrek, an artist who worked in the project mencioned above.
+ - SFX by Sunmachine, sound designer, also from SmallWorld_WeeklyJam40 project.
  - [Monogram Font](https://datagoblin.itch.io/monogram), a free font used in the game.
